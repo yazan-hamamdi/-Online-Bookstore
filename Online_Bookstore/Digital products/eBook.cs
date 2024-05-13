@@ -1,5 +1,7 @@
 ﻿
 
+using System.Text;
+
 namespace Online_Bookstore
 {
     public class eBook : eProduct
@@ -9,22 +11,24 @@ namespace Online_Bookstore
         public eBook()
         {
         }
-        public eBook(int id, string genre, string title, int quantity, int price, string description, string downloadLink, string pdfLink)
+        public eBook(int id, string genre, string title, int price, string description, string downloadLink, string pdfLink)
         {
             Id = id;
             Genre = genre;
             Title = title;
-            Quantity = quantity;
             Price = price;
             Description = description;
             DownloadLink = downloadLink;
             PdfLink = pdfLink;
         }
-
-        public override void AddToCart()
+        public override string ToString()
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder(base.ToString());
+            sb.AppendLine($"Download Link: {DownloadLink}");
+            sb.AppendLine($"PDF Link: {PdfLink}");
+            return sb.ToString();
         }
+
     }
 
 }

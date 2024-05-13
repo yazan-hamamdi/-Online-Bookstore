@@ -1,21 +1,33 @@
-﻿namespace Online_Bookstore
+﻿using System.Text;
+
+namespace Online_Bookstore
 {
     public class Cart
     {
         public int Id { get; set; }
         public float Discount { get; set; }
-        public List<Order> orders { get; set; }
+        public List<Order> Orders { get; set; }
         public Cart()
         {
-            orders = new List<Order>();
+            Orders = new List<Order>();
         }
 
         public Cart(int id, float discount, List<Order> orders)
         {
             Id = id;
             Discount = discount;
-            orders = orders ?? new List<Order>();
+            Orders = orders ?? new List<Order>();
         }
-
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Cart ID: {Id}, Discount: {Discount}%");
+            sb.AppendLine("Orders:");
+            foreach (var order in Orders)
+            {
+                sb.AppendLine(order.ToString());
+            }
+            return sb.ToString();
+        }
     }
 }

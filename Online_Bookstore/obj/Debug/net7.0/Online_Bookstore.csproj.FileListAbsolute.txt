@@ -1,0 +1,14 @@
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\bin\Debug\net7.0\Online_Bookstore.exe
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\bin\Debug\net7.0\Online_Bookstore.deps.json
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\bin\Debug\net7.0\Online_Bookstore.runtimeconfig.json
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\bin\Debug\net7.0\Online_Bookstore.dll
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\bin\Debug\net7.0\Online_Bookstore.pdb
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\obj\Debug\net7.0\Online_Bookstore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\obj\Debug\net7.0\Online_Bookstore.AssemblyInfoInputs.cache
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\obj\Debug\net7.0\Online_Bookstore.AssemblyInfo.cs
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\obj\Debug\net7.0\Online_Bookstore.csproj.CoreCompileInputs.cache
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\obj\Debug\net7.0\Online_Bookstore.dll
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\obj\Debug\net7.0\refint\Online_Bookstore.dll
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\obj\Debug\net7.0\Online_Bookstore.pdb
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\obj\Debug\net7.0\Online_Bookstore.genruntimeconfig.cache
+C:\Users\skynet\Desktop\oop\-Online-Bookstore\Online_Bookstore\obj\Debug\net7.0\ref\Online_Bookstore.dll
