@@ -1,8 +1,9 @@
-﻿using System.Text;
+﻿using Online_Bookstore.Interfaces;
+using System.Text;
 
 namespace Online_Bookstore
 {
-    public class Cart
+    public class Cart : ICrud<Order>
     {
         public int Id { get; set; }
         public float Discount { get; set; }
@@ -11,7 +12,6 @@ namespace Online_Bookstore
         {
             Orders = new List<Order>();
         }
-
         public Cart(int id, float discount, List<Order> orders)
         {
             Id = id;
@@ -28,6 +28,35 @@ namespace Online_Bookstore
                 sb.AppendLine(order.ToString());
             }
             return sb.ToString();
+        }
+        public void Create(Order order)
+        {
+            Orders.Add(order);
+        }
+        public Order Read(int id)
+        {
+            return Orders.Find(o => o.Id == id);
+        }
+
+        public bool Update(Order UPorder)
+        {
+            var Index = Orders.FindIndex(o => o.Id ==  UPorder.Id);
+            if (Index != -1)
+            {
+                Orders[Index] = UPorder;
+                return true;
+            }
+            return false;
+        }
+        public bool Delete(int id)
+        {
+            var order = Orders.Find(o => o.Id ==  Id);
+            if (order != null) 
+            {
+               Orders.Remove(order);
+                return true;
+            } 
+            return false;
         }
     }
 }

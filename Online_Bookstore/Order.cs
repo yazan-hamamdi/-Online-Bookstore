@@ -1,10 +1,11 @@
 ﻿
 
+using Online_Bookstore.Interfaces;
 using System.Text;
 
 namespace Online_Bookstore
 {
-    public class Order
+    public class Order : ICrud<Product>, IECrud<Product>
     {
         public int Id { get; set; }
         public int UserId { get; set; }
@@ -43,5 +44,72 @@ namespace Online_Bookstore
             }
             return sb.ToString();
         }
+
+        public void Create(Product product)
+        {
+            Products.Add(product);
+        }
+
+        public Product Read(int id)
+        {
+            return Products.Find(p => p.Id == id);
+        }
+
+        public bool Update(Product UPproduct)
+        {
+            var Index = Products.FindIndex(p => p.Id == UPproduct.Id);
+            if (Index != -1)
+            {
+                Products[Index] = UPproduct;
+                return true;
+            }
+            return false;
+        }
+
+        public bool Delete(int id)
+        {
+            var product = Products.Find(p => p.Id == id);
+            if (product != null)
+            {
+                Products.Remove(product);
+                return true;
+            }
+            return false;
+        }
+
+        public void eCreate(Product product)
+        {
+            Products.Add(product);
+        }
+
+        public Product eRead(int id)
+        {
+            return Products.Find(p => p.Id == id);
+        }
+
+        public bool eUpdate(Product UPproduct)
+        {
+            var Index = Products.FindIndex(p => p.Id == UPproduct.Id);
+            if(Index != -1) 
+            {
+                Products[Index] = UPproduct;
+                return true;
+            }
+            return false;
+        }
+
+        public bool eDelete(int id)
+        {
+            var product = Products.Find(p => p.Id == id);
+            if (product != null) 
+            {
+                Products.Remove(product);
+                return true;
+            }
+            return false;
+        }
     }
+
+       
+    
 }
