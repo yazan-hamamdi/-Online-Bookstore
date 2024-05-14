@@ -6,15 +6,17 @@ namespace Online_Bookstore
     public class Cart : ICrud<Order>
     {
         public int Id { get; set; }
+        public int UserId { get; set; }
         public float Discount { get; set; }
         public List<Order> Orders { get; set; }
         public Cart()
         {
             Orders = new List<Order>();
         }
-        public Cart(int id, float discount, List<Order> orders)
+        public Cart(int id,int userId, float discount, List<Order> orders)
         {
             Id = id;
+            UserId = userId;
             Discount = discount;
             Orders = orders ?? new List<Order>();
         }

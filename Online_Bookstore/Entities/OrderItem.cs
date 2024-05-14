@@ -1,5 +1,4 @@
-﻿
-namespace Online_Bookstore
+﻿namespace Online_Bookstore
 {
     public class OrderItem
     {

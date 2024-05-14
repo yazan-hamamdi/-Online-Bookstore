@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Online_Bookstore.Interfaces
 {
-    public interface IECrud<T>
+    public interface IProductRepository
     {
-        void eCreate(T entity);
-        T eRead(int id);
-        bool eUpdate(T entity);
-        bool eDelete(int id);
+        List<Product> GetAll();
+        List<Book> GetAllBooks();
+        List<Newspaper> GetAllNewsPapers();
     }
 }

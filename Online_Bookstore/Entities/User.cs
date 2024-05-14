@@ -1,7 +1,8 @@
-﻿using System.Text;
+﻿using Online_Bookstore.Interfaces;
+using System.Text;
 namespace Online_Bookstore
 {
-    public class User
+    public class User 
     {
         public int Id { get; set; }
         public string Name { get; set; }

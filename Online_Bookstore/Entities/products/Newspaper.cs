@@ -1,7 +1,7 @@
 ﻿
 namespace Online_Bookstore
 {
-    internal class Newspaper : Product
+    public class Newspaper : Product
     {
         public DateTime Date_Of_Publication {set; get; }
         public Newspaper()
